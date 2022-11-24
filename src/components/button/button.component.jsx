@@ -6,10 +6,10 @@ const BUTTON_TYPE_CLASSES ={
 }
 
 
-const Button = ({children, buttonType, ...otherProps}) => {
+const Button = ({children, buttonType, isLoading, ...otherProps}) => {
     return(
-        <button className = {`button-container ${BUTTON_TYPE_CLASSES[buttonType]}`} {...otherProps}>
-            {children}
+        <button className = {`button-container ${BUTTON_TYPE_CLASSES[buttonType]}`} disabled={isLoading} {...otherProps}>
+            {isLoading ? <div className='spinner-container'/> : children}
         </button>
     )
 }

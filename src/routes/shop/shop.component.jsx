@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
-import { fetchCategoriesStartAsync } from '../../store/categories/category.actions';
+import { fetchCategoriesStart } from '../../store/categories/category.actions';
 
 import CategoriesPreview from '../categories-preview/categories-preview.component';
 import Category from '../category/category.component';
@@ -12,7 +12,7 @@ const Shop = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchCategoriesStartAsync());
+    dispatch(fetchCategoriesStart());
   }, []);
 
   return (
