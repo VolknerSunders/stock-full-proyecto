@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import './sign-in-form.styles.scss'
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
+import { Link } from "react-router-dom";
 
 const defaultFormFields = {
     email: '',
@@ -85,6 +86,8 @@ const SignInForm = () => {
                     </Button>
                 </div>
             </form>
+            <h3>¿No tienes cuenta?</h3>
+            <Link to="/register">¡Registrate dando click aqui!</Link>
         </div>
     )
 }

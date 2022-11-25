@@ -1,7 +1,6 @@
 import { Fragment } from "react"
 import { Outlet } from "react-router-dom"
 import { useSelector, useDispatch } from "react-redux";
-
 import { ReactComponent as Logo} from '../../assets/logo.svg'
 
 import CartIcon from "../../components/cart-icon/cart-icon.component";
@@ -11,6 +10,7 @@ import { selectIsCartOpen } from "../../store/cart/cart.selector";
 
 import { NavigationContainer,LogoContainer,NavLinks,NavLink } from "./navigation.styles";
 import { signOutStart } from '../../store/user/user.action';
+import './navigation.styles.scss'
 
 const Navigation = () =>{
     const currentUser = useSelector((state) => state.user.currentUser);
@@ -39,7 +39,16 @@ const Navigation = () =>{
             {isCartOpen && <CartDropdown/>}
         </NavigationContainer>
         <Outlet/>
+        <footer>
+            <div className="footer-copyright text-center">
+                <h4> 
+                    &copy; Desarrollado con ❤️ por Brian, Cesar y Chiristian 
+                </h4>
+            </div>
+        </footer>
+        
       </Fragment>
+      
     )
 }
 

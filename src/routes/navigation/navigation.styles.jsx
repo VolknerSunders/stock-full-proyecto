@@ -7,12 +7,13 @@ export const NavigationContainer = styled.div `
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  border-bottom: 1px solid;
 `
 
 export const LogoContainer = styled(Link)`
   height: 100%;
   width: 70px;
-  padding: 25px;
+  padding: 0px;
 `
 
 export const NavLinks = styled.div`

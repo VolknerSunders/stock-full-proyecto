@@ -10,27 +10,27 @@ const categories = [
   },
   {
     id: 2,
-    titulo: 'Abrigos',
-    imageUrl: 'https://i.imgur.com/IYmrACk.jpg',
-    route: 'shop/abrigos'
+    titulo: 'Invierno',
+    imageUrl: 'https://i.imgur.com/H1hP7AX.jpg',
+    route: 'shop/invierno'
   },
   {
     id: 3,
-    titulo: 'Calzado',
-    imageUrl: 'https://i.imgur.com/2Xi9oRx.jpg',
-    route: 'shop/calzado'
+    titulo: 'Sudaderas',
+    imageUrl: 'https://i.imgur.com/5mKYCpf.jpg',
+    route: 'shop/sudaderas'
   },
   {
     id: 4,
     titulo: 'Hombres',
     imageUrl: 'https://i.imgur.com/QtnngMv.jpg',
-    route: 'shop/hombres'
+    route: 'men'
   },
   {
     id: 5,
     titulo: 'Mujeres',
     imageUrl: 'https://i.imgur.com/zXQApog.jpg',
-    route: 'shop/mujeres'
+    route: 'women'
   }
 ]
 
