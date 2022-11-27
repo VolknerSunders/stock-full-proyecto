@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 
 import { selectCartTotal } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
+import { clearItemFromCart } from "../../store/cart/cart.action";
 
 import Button from "../button/button.component";
 import './payment-form.styles.scss'

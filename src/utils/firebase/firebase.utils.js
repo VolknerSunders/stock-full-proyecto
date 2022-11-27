@@ -56,6 +56,8 @@ const firebaseConfig = {
     await batch.commit();
     console.log('hecho');
   }
+
+  
   
   export const getCategoriesAndDocuments = async () => {
     const collectionRef = collection(db, 'categories');

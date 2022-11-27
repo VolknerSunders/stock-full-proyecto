@@ -10,6 +10,8 @@ import { checkUserSession } from './store/user/user.action';
 import { useDispatch } from "react-redux";
 import DirectoryMen from "./components/directory-men/directory-men.component";
 import DirectoryWomen from "./components/directory-women/directory-women.component";
+import CreateItem from "./routes/create-item/create-item.component";
+import ItemsPreview from "./routes/items-preview/items-preview.component";
 /* import { addCollectionAndDocuments } from "./utils/firebase/firebase.utils";
 import SHOP_DATA from "./shop-data"; */
 
@@ -36,6 +38,8 @@ const App = () =>{
         <Route path='auth' element={<Authentication />}/>
         <Route path='register' element={<Register />}/>
         <Route path='checkout' element={<Checkout />}/>
+        <Route path="createitem" element={<CreateItem/>}/>
+        <Route path="items" element={<ItemsPreview/>}/>
       </Route>
     </Routes>
   );
