@@ -17,6 +17,7 @@ const Navigation = () =>{
     const isCartOpen = useSelector(selectIsCartOpen);
     const dispatch = useDispatch();
     const signOutUser = () => dispatch(signOutStart());
+
     return (
       <Fragment>
         <NavigationContainer>
@@ -24,6 +25,23 @@ const Navigation = () =>{
                 <Logo className='logo'/>
             </LogoContainer>
             <NavLinks>
+                {currentUser ? (
+                    currentUser.admin ? 
+                    <>
+                        <NavLink  to='/createitem'>
+                            Crear/Actualizar
+                        </NavLink>
+                        <NavLink to='/items'>
+                            Eliminar/Consultar
+                        </NavLink>
+                    </>
+                    :
+                    <>
+                    </>
+                ):(
+                    <>
+                    </>
+                )}
                 <NavLink to='/shop'>
                     Tienda
                 </NavLink>
